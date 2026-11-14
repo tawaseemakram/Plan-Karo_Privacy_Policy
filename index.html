@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Plan Karo</title>
+  <meta name="description" content="Official Google Play Privacy Policy for Plan Karo (com.aistudio.taskflow.mzrkqp) — Tasks, Daily Habits, Routines, Notes, and AI Productivity Assistant." />
+  <style>
+    :root {
+      --bg: #081214;
+      --surface: #0f1e22;
+      --surface-elevated: #14272c;
+      --border: rgba(45, 212, 191, 0.22);
+      --border-subtle: rgba(148, 163, 184, 0.18);
+      --text: #e6f4f1;
+      --text-muted: #9eb5b9;
+      --accent: #2dd4bf;
+      --accent-soft: rgba(45, 212, 191, 0.14);
+      --accent-strong: #0d3b38;
+      --badge-text: #99f6e4;
+      --shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+    }
+
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f4f9f8;
+        --surface: #ffffff;
+        --surface-elevated: #f8fcfb;
+        --border: rgba(13, 148, 136, 0.25);
+        --border-subtle: rgba(15, 23, 42, 0.12);
+        --text: #0f172a;
+        --text-muted: #475569;
+        --accent: #0f766e;
+        --accent-soft: rgba(15, 118, 110, 0.08);
+        --accent-strong: #ccfbf1;
+        --badge-text: #0f766e;
+        --shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover,
+    a:focus {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 28px 18px 64px;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, var(--accent-soft), var(--surface));
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 28px 24px;
+      box-shadow: var(--shadow);
+      margin-bottom: 24px;
+    }
+
+    .badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 4px 12px;
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      background: var(--accent-soft);
+      color: var(--badge-text);
+      border: 1px solid var(--border);
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(1.7rem, 3.2vw, 2.25rem);
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+    }
+
+    .subtitle {
+      margin: 0;
+      color: var(--text-muted);
+      font-size: 0.98rem;
+    }
+
+    .meta-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 12px;
+      margin-top: 20px;
+      padding-top: 18px;
+      border-top: 1px solid var(--border-subtle);
+      font-size: 0.9rem;
+    }
+
+    .meta-item strong {
+      display: block;
+      font-size: 0.76rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+      margin-bottom: 2px;
+    }
+
+    .toc {
+      background: var(--surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: 16px;
+      padding: 18px 22px;
+      margin-bottom: 24px;
+    }
+
+    .toc-title {
+      margin: 0 0 10px;
+      font-size: 0.92rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--accent);
+    }
+
+    .toc ul {
+      margin: 0;
+      padding-left: 18px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 6px 20px;
+      font-size: 0.92rem;
+    }
+
+    section.card {
+      background: var(--surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: 18px;
+      padding: 22px 24px;
+      margin-bottom: 18px;
+      box-shadow: var(--shadow);
+    }
+
+    section.card h2 {
+      margin: 0 0 12px;
+      font-size: 1.2rem;
+      color: var(--text);
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    section.card h3 {
+      margin: 16px 0 6px;
+      font-size: 1rem;
+      color: var(--accent);
+    }
+
+    p {
+      margin: 0 0 12px;
+      color: var(--text);
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    ul {
+      margin: 8px 0 12px;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+      color: var(--text);
+    }
+
+    li strong {
+      color: var(--text);
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      margin-top: 12px;
+      border-radius: 12px;
+      border: 1px solid var(--border-subtle);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+      background: var(--surface-elevated);
+    }
+
+    th,
+    td {
+      text-align: left;
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--border-subtle);
+      vertical-align: top;
+    }
+
+    th {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--accent);
+      background: var(--accent-soft);
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    .callout {
+      background: var(--accent-soft);
+      border-left: 4px solid var(--accent);
+      border-radius: 10px;
+      padding: 12px 16px;
+      margin: 14px 0 4px;
+      font-size: 0.93rem;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.86rem;
+      margin-top: 32px;
+      padding-top: 18px;
+      border-top: 1px solid var(--border-subtle);
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <header class="hero">
+      <div class="badge-row">
+        <span class="badge">Plan Karo</span>
+        <span class="badge">Google Play Compliant</span>
+        <span class="badge">Local-First Privacy</span>
+      </div>
+      <h1>Privacy Policy</h1>
+      <p class="subtitle">
+        This Privacy Policy explains how <strong>Plan Karo</strong> handles, protects, and processes information when you use our Android mobile application.
+      </p>
+      <div class="meta-grid">
+        <div class="meta-item">
+          <strong>Application Name</strong>
+          <span>Plan Karo (Android)</span>
+        </div>
+        <div class="meta-item">
+          <strong>Package Identifier</strong>
+          <span><code>com.aistudio.taskflow.mzrkqp</code></span>
+        </div>
+        <div class="meta-item">
+          <strong>Effective Date</strong>
+          <span>November 14, 2026</span>
+        </div>
+        <div class="meta-item">
+          <strong>Developer Contact</strong>
+          <a href="mailto:tawaseemakram@gmail.com">tawaseemakram@gmail.com</a>
+        </div>
+      </div>
+    </header>
+
+    <nav class="toc" aria-label="Table of Contents">
+      <p class="toc-title">Contents</p>
+      <ul>
+        <li><a href="#overview">1. Overview &amp; Scope</a></li>
+        <li><a href="#local-storage">2. Information Stored Locally on Your Device</a></li>
+        <li><a href="#permissions">3. App Permissions &amp; Device Access</a></li>
+        <li><a href="#ai-processing">4. AI Productivity Features (Firebase AI Logic)</a></li>
+        <li><a href="#advertising">5. Advertising &amp; Analytics (Google AdMob)</a></li>
+        <li><a href="#data-safety">6. Google Play Data Safety Summary</a></li>
+        <li><a href="#retention-deletion">7. Data Retention, Controls &amp; Deletion</a></li>
+        <li><a href="#children">8. Children's Privacy</a></li>
+        <li><a href="#security-changes">9. Security &amp; Policy Updates</a></li>
+        <li><a href="#contact">10. Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <section id="overview" class="card">
+      <h2>1. Overview &amp; Scope</h2>
+      <p>
+        Plan Karo ("we", "our", or "the App") is a personal productivity application designed to help you manage daily tasks, notes, checklists, habits, routines, voice memos, reminders, and AI-assisted planning workflows.
+      </p>
+      <p>
+        We respect your privacy and follow a <strong>local-first architecture</strong>. Plan Karo does not require account registration or login, and we do not operate our own backend servers to collect, sell, rent, or trade your personal productivity records.
+      </p>
+    </section>
+
+    <section id="local-storage" class="card">
+      <h2>2. Information Stored Locally on Your Device</h2>
+      <p>
+        All personal productivity content you create in Plan Karo is stored locally on your Android device inside application-private storage (Android Room SQLite database and private SharedPreferences):
+      </p>
+      <ul>
+        <li><strong>Tasks, Categories &amp; Schedules:</strong> Task titles, notes, priorities, custom categories, due dates, repeat schedules, completion status, and reminder/alarm preferences.</li>
+        <li><strong>Notes &amp; Checklists:</strong> Personal notes, checklist items, and any action items you save.</li>
+        <li><strong>Daily Habits &amp; Routines:</strong> Habit definitions, streaks, check-in records, and Morning/Afternoon/Evening routine settings.</li>
+        <li><strong>Voice Notes &amp; Attached Images:</strong> Audio recordings you explicitly record inside the App and references/copies of photos you choose via the Android Photo Picker.</li>
+        <li><strong>App Preferences:</strong> Legal acceptance status, notification nudge preferences, and an optional user-supplied Gemini API key override (if you choose to configure one).</li>
+      </ul>
+      <p>
+        If you enable Android system backup on your device, Android OS Backup may back up eligible local app data to your personal Google Drive under Google's standard Android backup controls.
+      </p>
+    </section>
+
+    <section id="permissions" class="card">
+      <h2>3. App Permissions &amp; Device Access</h2>
+      <p>Plan Karo requests only permissions strictly required to deliver its features:</p>
+      <ul>
+        <li>
+          <strong>Notifications (<code>POST_NOTIFICATIONS</code>):</strong> Used only to show your scheduled task reminders, daily routine notifications, and optional morning/afternoon/evening check-in nudges.
+        </li>
+        <li>
+          <strong>Exact Alarms, Wake Lock &amp; Vibration (<code>SCHEDULE_EXACT_ALARM</code>, <code>WAKE_LOCK</code>, <code>VIBRATE</code>):</strong> Used solely to trigger timely task and routine alarms when you enable alarm reminders.
+        </li>
+        <li>
+          <strong>Run at Startup (<code>RECEIVE_BOOT_COMPLETED</code>):</strong> Used after device reboot to restore your active local reminders and alarms.
+        </li>
+        <li>
+          <strong>Microphone (<code>RECORD_AUDIO</code>):</strong> Requested only when you tap to record an Audio Voice Note. Audio is never recorded in the background and stays stored locally on your device.
+        </li>
+        <li>
+          <strong>Photos &amp; Images (Zero-Permission Android Photo Picker):</strong> Plan Karo uses Android's built-in <code>PickVisualMedia</code> photo picker without requesting broad media or external storage permissions. The App can access only the specific image you select.
+        </li>
+        <li>
+          <strong>Network Access (<code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code>):</strong> Used strictly for AI assistant requests, Firebase App Check verification, and loading advertisements via Google AdMob.
+        </li>
+      </ul>
+    </section>
+
+    <section id="ai-processing" class="card">
+      <h2>4. AI Productivity Features (Firebase AI Logic &amp; Optional Custom Key)</h2>
+      <p>
+        Plan Karo offers optional AI features—including AI Coach, Natural Language Task Creation, Daily Plan Generation, Goal Breakdown, Smart Reschedule, and Note Action Item Extraction. These features run <strong>only when you actively invoke them</strong>.
+      </p>
+      <ul>
+        <li>
+          <strong>Transmission &amp; Processing:</strong> When you submit an AI request, your prompt text (and relevant task/note context required to fulfill your request) is sent securely over encrypted HTTPS/TLS via <strong>Firebase AI Logic (Google Gemini API)</strong>, protected by <strong>Firebase App Check</strong> (including reCAPTCHA Enterprise attestation) to prevent abuse.
+        </li>
+        <li>
+          <strong>Optional Custom API Key Mode:</strong> If you optionally enter your own Gemini API key in Profile settings, AI requests are sent directly from your device to Google's Gemini API (<code>generativelanguage.googleapis.com</code>) using your key. Your key is stored locally on your device and never transmitted to our developer servers.
+        </li>
+        <li>
+          <strong>Do Not Submit Sensitive Secrets:</strong> Please avoid entering passwords, banking details, government IDs, or confidential medical/financial records in AI prompts.
+        </li>
+      </ul>
+      <div class="callout">
+        Third-party AI service terms and privacy practices apply to prompts processed by Google/Firebase:
+        <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase Privacy &amp; Security</a> and
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>.
+      </div>
+    </section>
+
+    <section id="advertising" class="card">
+      <h2>5. Advertising &amp; Third-Party SDKs (Google AdMob)</h2>
+      <p>
+        Plan Karo uses <strong>Google AdMob</strong> to display banner and interstitial ads so core productivity features remain free to use.
+      </p>
+      <p>
+        Google AdMob (and its mediation partners, if applicable) may automatically collect and process certain device and interaction information in accordance with Google's policies, including:
+      </p>
+      <ul>
+        <li>Google Advertising ID (<code>AD_ID</code>) and app set ID.</li>
+        <li>IP address (which may be used to estimate general/coarse location such as city or country).</li>
+        <li>Device model, OS version, language, app version, crash/performance diagnostics, and ad interaction metrics (views, clicks, impressions).</li>
+      </ul>
+      <p>
+        You can reset your Advertising ID or opt out of personalized advertising anytime in your Android device settings under <strong>Settings &gt; Google &gt; Ads</strong> (or <strong>Settings &gt; Privacy &gt; Ads</strong>).
+      </p>
+      <p>Learn more about how Google handles advertising data:</p>
+      <ul>
+        <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a></li>
+        <li><a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">How Google Uses Information from Sites or Apps That Use Our Services</a></li>
+        <li><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener noreferrer">Google AdMob Privacy &amp; User Consent Information</a></li>
+      </ul>
+    </section>
+
+    <section id="data-safety" class="card">
+      <h2>6. Google Play Data Safety Summary</h2>
+      <p>
+        The summary below reflects how data is handled by Plan Karo and integrated third-party SDKs:
+      </p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Data Category</th>
+              <th>Purpose</th>
+              <th>Where Processed / Shared</th>
+              <th>Encrypted in Transit</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Tasks, Notes, Habits &amp; Routines</strong></td>
+              <td>Core app functionality &amp; local reminders</td>
+              <td>Stored locally on device only (not collected by developer)</td>
+              <td>N/A (On-device)</td>
+            </tr>
+            <tr>
+              <td><strong>Voice Recordings &amp; Selected Photos</strong></td>
+              <td>Audio memos &amp; task/note attachments</td>
+              <td>Stored locally on device only (not uploaded by developer)</td>
+              <td>N/A (On-device)</td>
+            </tr>
+            <tr>
+              <td><strong>User-Submitted AI Prompts</strong></td>
+              <td>AI Coach, Goal Breakdown &amp; Smart Task features</td>
+              <td>Transmitted transiently to Google Firebase AI Logic / Gemini API when triggered</td>
+              <td>Yes (HTTPS/TLS)</td>
+            </tr>
+            <tr>
+              <td><strong>Device IDs, Coarse Location &amp; Ad Diagnostics</strong></td>
+              <td>Advertising, fraud prevention &amp; App Check security</td>
+              <td>Collected by Google AdMob &amp; Firebase App Check SDKs</td>
+              <td>Yes (HTTPS/TLS)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="retention-deletion" class="card">
+      <h2>7. Data Retention, User Controls &amp; Deletion</h2>
+      <p>You have full control over your data in Plan Karo:</p>
+      <ul>
+        <li><strong>In-App Deletion:</strong> You can edit or permanently delete any task, note, checklist, habit, routine, custom category, attached image, voice note, or optional API key inside the App at any time.</li>
+        <li><strong>Complete Local Erasure:</strong> Because Plan Karo has no developer-hosted user accounts, clearing the App's data in Android Settings (<strong>App Info &gt; Storage &gt; Clear Data</strong>) or uninstalling Plan Karo permanently removes all local databases, audio files, and preferences from your device.</li>
+        <li><strong>Permission Revocation:</strong> You can revoke Notification, Exact Alarm, or Microphone permissions anytime via Android System Settings or the Permissions section inside your Profile screen.</li>
+        <li><strong>Support &amp; Privacy Requests:</strong> For questions about data handling or deletion, contact us at <a href="mailto:tawaseemakram@gmail.com">tawaseemakram@gmail.com</a>.</li>
+      </ul>
+    </section>
+
+    <section id="children" class="card">
+      <h2>8. Children's Privacy</h2>
+      <p>
+        Plan Karo is not directed to children under the age of 13 (or the minimum age required for digital consent in your jurisdiction). We do not knowingly collect personal information from children. If you believe a child has provided personal information through an integrated third-party service, please contact us at <a href="mailto:tawaseemakram@gmail.com">tawaseemakram@gmail.com</a> so we can assist promptly.
+      </p>
+    </section>
+
+    <section id="security-changes" class="card">
+      <h2>9. Security &amp; Policy Updates</h2>
+      <p>
+        We rely on Android OS application sandboxing for on-device records and HTTPS/TLS encryption for all network communications with Firebase AI Logic, Firebase App Check, and Google AdMob. No method of electronic storage or transmission is 100% immune to risk, so please keep your device OS updated and protected with a screen lock.
+      </p>
+      <p>
+        We may update this Privacy Policy periodically to reflect app improvements, SDK updates, or legal requirements. Changes take effect once posted on this page with an updated <strong>Effective Date</strong>.
+      </p>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>10. Contact Us</h2>
+      <p>
+        If you have any questions, concerns, or requests regarding this Privacy Policy or Plan Karo's data practices, please contact the developer:
+      </p>
+      <ul>
+        <li><strong>Developer Email:</strong> <a href="mailto:tawaseemakram@gmail.com">tawaseemakram@gmail.com</a></li>
+        <li><strong>App:</strong> Plan Karo (<code>com.aistudio.taskflow.mzrkqp</code>)</li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>&copy; 2026 Plan Karo. All rights reserved. • Effective Date: November 14, 2026</p>
+    </footer>
+  </main>
+</body>
+</html>
