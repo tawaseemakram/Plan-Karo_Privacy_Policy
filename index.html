@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Privacy Policy — Plan Karo</title>
-  <meta name="description" content="Official Google Play Privacy Policy for Plan Karo (com.aistudio.taskflow.mzrkqp) — Tasks, Daily Habits, Routines, Notes, and AI Productivity Assistant." />
+  <meta name="description" content="Official Google Play Privacy Policy for Plan Karo (com.aistudio.taskflow.mzrkqp) — Tasks, Daily Habits, Routines, and Voice Notes." />
   <style>
     :root {
       --bg: #081214;
@@ -275,7 +275,7 @@
         </div>
         <div class="meta-item">
           <strong>Effective Date</strong>
-          <span>November 14, 2026</span>
+          <span>November 16, 2026</span>
         </div>
         <div class="meta-item">
           <strong>Developer Contact</strong>
@@ -290,20 +290,19 @@
         <li><a href="#overview">1. Overview &amp; Scope</a></li>
         <li><a href="#local-storage">2. Information Stored Locally on Your Device</a></li>
         <li><a href="#permissions">3. App Permissions &amp; Device Access</a></li>
-        <li><a href="#ai-processing">4. AI Productivity Features (Firebase AI Logic)</a></li>
-        <li><a href="#advertising">5. Advertising &amp; Analytics (Google AdMob)</a></li>
-        <li><a href="#data-safety">6. Google Play Data Safety Summary</a></li>
-        <li><a href="#retention-deletion">7. Data Retention, Controls &amp; Deletion</a></li>
-        <li><a href="#children">8. Children's Privacy</a></li>
-        <li><a href="#security-changes">9. Security &amp; Policy Updates</a></li>
-        <li><a href="#contact">10. Contact Us</a></li>
+        <li><a href="#advertising">4. Advertising &amp; Analytics (Google AdMob)</a></li>
+        <li><a href="#data-safety">5. Google Play Data Safety Summary</a></li>
+        <li><a href="#retention-deletion">6. Data Retention, Controls &amp; Deletion</a></li>
+        <li><a href="#children">7. Children's Privacy</a></li>
+        <li><a href="#security-changes">8. Security &amp; Policy Updates</a></li>
+        <li><a href="#contact">9. Contact Us</a></li>
       </ul>
     </nav>
 
     <section id="overview" class="card">
       <h2>1. Overview &amp; Scope</h2>
       <p>
-        Plan Karo ("we", "our", or "the App") is a personal productivity application designed to help you manage daily tasks, notes, checklists, habits, routines, voice memos, reminders, and AI-assisted planning workflows.
+        Plan Karo ("we", "our", or "the App") is a personal productivity application designed to help you manage daily tasks, notes, checklists, habits, routines, voice memos, and reminders.
       </p>
       <p>
         We respect your privacy and follow a <strong>local-first architecture</strong>. Plan Karo does not require account registration or login, and we do not operate our own backend servers to collect, sell, rent, or trade your personal productivity records.
@@ -320,7 +319,7 @@
         <li><strong>Notes &amp; Checklists:</strong> Personal notes, checklist items, and any action items you save.</li>
         <li><strong>Daily Habits &amp; Routines:</strong> Habit definitions, streaks, check-in records, and Morning/Afternoon/Evening routine settings.</li>
         <li><strong>Voice Notes &amp; Attached Images:</strong> Audio recordings you explicitly record inside the App and references/copies of photos you choose via the Android Photo Picker.</li>
-        <li><strong>App Preferences:</strong> Legal acceptance status, notification nudge preferences, and an optional user-supplied Gemini API key override (if you choose to configure one).</li>
+        <li><strong>App Preferences:</strong> Legal acceptance status, alarm settings, quote preferences, and notification nudge preferences.</li>
       </ul>
       <p>
         If you enable Android system backup on your device, Android OS Backup may back up eligible local app data to your personal Google Drive under Google's standard Android backup controls.
@@ -338,6 +337,9 @@
           <strong>Exact Alarms, Wake Lock &amp; Vibration (<code>SCHEDULE_EXACT_ALARM</code>, <code>WAKE_LOCK</code>, <code>VIBRATE</code>):</strong> Used solely to trigger timely task and routine alarms when you enable alarm reminders.
         </li>
         <li>
+          <strong>Foreground Service Alarm Playback (<code>FOREGROUND_SERVICE</code>, <code>FOREGROUND_SERVICE_MEDIA_PLAYBACK</code>):</strong> Used strictly when your scheduled Task Alarm triggers to keep alarm audio playing reliably with an active, user-controllable notification (Dismiss / Snooze) even when the device is locked or the app is in the background.
+        </li>
+        <li>
           <strong>Run at Startup (<code>RECEIVE_BOOT_COMPLETED</code>):</strong> Used after device reboot to restore your active local reminders and alarms.
         </li>
         <li>
@@ -347,38 +349,15 @@
           <strong>Photos &amp; Images (Zero-Permission Android Photo Picker):</strong> Plan Karo uses Android's built-in <code>PickVisualMedia</code> photo picker without requesting broad media or external storage permissions. The App can access only the specific image you select.
         </li>
         <li>
-          <strong>Network Access (<code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code>):</strong> Used strictly for AI assistant requests, Firebase App Check verification, and loading advertisements via Google AdMob.
+          <strong>Network Access (<code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code>):</strong> Used strictly for loading advertisements via Google AdMob.
         </li>
       </ul>
-    </section>
-
-    <section id="ai-processing" class="card">
-      <h2>4. AI Productivity Features (Firebase AI Logic &amp; Optional Custom Key)</h2>
-      <p>
-        Plan Karo offers optional AI features—including AI Coach, Natural Language Task Creation, Daily Plan Generation, Goal Breakdown, Smart Reschedule, and Note Action Item Extraction. These features run <strong>only when you actively invoke them</strong>.
-      </p>
-      <ul>
-        <li>
-          <strong>Transmission &amp; Processing:</strong> When you submit an AI request, your prompt text (and relevant task/note context required to fulfill your request) is sent securely over encrypted HTTPS/TLS via <strong>Firebase AI Logic (Google Gemini API)</strong>, protected by <strong>Firebase App Check</strong> (including reCAPTCHA Enterprise attestation) to prevent abuse.
-        </li>
-        <li>
-          <strong>Optional Custom API Key Mode:</strong> If you optionally enter your own Gemini API key in Profile settings, AI requests are sent directly from your device to Google's Gemini API (<code>generativelanguage.googleapis.com</code>) using your key. Your key is stored locally on your device and never transmitted to our developer servers.
-        </li>
-        <li>
-          <strong>Do Not Submit Sensitive Secrets:</strong> Please avoid entering passwords, banking details, government IDs, or confidential medical/financial records in AI prompts.
-        </li>
-      </ul>
-      <div class="callout">
-        Third-party AI service terms and privacy practices apply to prompts processed by Google/Firebase:
-        <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase Privacy &amp; Security</a> and
-        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>.
-      </div>
     </section>
 
     <section id="advertising" class="card">
-      <h2>5. Advertising &amp; Third-Party SDKs (Google AdMob)</h2>
+      <h2>4. Advertising &amp; Third-Party SDKs (Google AdMob)</h2>
       <p>
-        Plan Karo uses <strong>Google AdMob</strong> to display banner and interstitial ads so core productivity features remain free to use.
+        Plan Karo uses <strong>Google AdMob</strong> to display banner and interstitial ads so core productivity features remain free to use. Where required by regional law (such as the EEA, UK, and Switzerland), Plan Karo uses Google's User Messaging Platform (UMP) consent dialog so you can choose your ad privacy preferences.
       </p>
       <p>
         Google AdMob (and its mediation partners, if applicable) may automatically collect and process certain device and interaction information in accordance with Google's policies, including:
@@ -400,7 +379,7 @@
     </section>
 
     <section id="data-safety" class="card">
-      <h2>6. Google Play Data Safety Summary</h2>
+      <h2>5. Google Play Data Safety Summary</h2>
       <p>
         The summary below reflects how data is handled by Plan Karo and integrated third-party SDKs:
       </p>
@@ -428,15 +407,9 @@
               <td>N/A (On-device)</td>
             </tr>
             <tr>
-              <td><strong>User-Submitted AI Prompts</strong></td>
-              <td>AI Coach, Goal Breakdown &amp; Smart Task features</td>
-              <td>Transmitted transiently to Google Firebase AI Logic / Gemini API when triggered</td>
-              <td>Yes (HTTPS/TLS)</td>
-            </tr>
-            <tr>
               <td><strong>Device IDs, Coarse Location &amp; Ad Diagnostics</strong></td>
-              <td>Advertising, fraud prevention &amp; App Check security</td>
-              <td>Collected by Google AdMob &amp; Firebase App Check SDKs</td>
+              <td>Advertising &amp; fraud prevention</td>
+              <td>Collected by Google AdMob SDK</td>
               <td>Yes (HTTPS/TLS)</td>
             </tr>
           </tbody>
@@ -445,27 +418,28 @@
     </section>
 
     <section id="retention-deletion" class="card">
-      <h2>7. Data Retention, User Controls &amp; Deletion</h2>
+      <h2>6. Data Retention, User Controls &amp; Deletion</h2>
       <p>You have full control over your data in Plan Karo:</p>
       <ul>
-        <li><strong>In-App Deletion:</strong> You can edit or permanently delete any task, note, checklist, habit, routine, custom category, attached image, voice note, or optional API key inside the App at any time.</li>
-        <li><strong>Complete Local Erasure:</strong> Because Plan Karo has no developer-hosted user accounts, clearing the App's data in Android Settings (<strong>App Info &gt; Storage &gt; Clear Data</strong>) or uninstalling Plan Karo permanently removes all local databases, audio files, and preferences from your device.</li>
+        <li><strong>In-App Deletion:</strong> You can edit or permanently delete any task, note, checklist, habit, routine, custom category, attached image, or voice note inside the App at any time. Deleting an item also deletes any unreferenced local image or audio files stored for that item.</li>
+        <li><strong>One-Tap In-App Local Wipe (Clear All Local Data):</strong> Under <strong>Profile &gt; Clear All Local Data</strong>, you can permanently erase all locally stored tasks, notes, habits, routines, custom categories, attached images, voice recordings, and alarm/app preferences in one action.</li>
+        <li><strong>Device-Level Erasure:</strong> Because Plan Karo has no developer-hosted user accounts, clearing the App's data in Android Settings (<strong>App Info &gt; Storage &gt; Clear Data</strong>) or uninstalling Plan Karo also permanently removes all local databases, media files, and preferences from your device.</li>
         <li><strong>Permission Revocation:</strong> You can revoke Notification, Exact Alarm, or Microphone permissions anytime via Android System Settings or the Permissions section inside your Profile screen.</li>
         <li><strong>Support &amp; Privacy Requests:</strong> For questions about data handling or deletion, contact us at <a href="mailto:tawaseemakram@gmail.com">tawaseemakram@gmail.com</a>.</li>
       </ul>
     </section>
 
     <section id="children" class="card">
-      <h2>8. Children's Privacy</h2>
+      <h2>7. Children's Privacy</h2>
       <p>
         Plan Karo is not directed to children under the age of 13 (or the minimum age required for digital consent in your jurisdiction). We do not knowingly collect personal information from children. If you believe a child has provided personal information through an integrated third-party service, please contact us at <a href="mailto:tawaseemakram@gmail.com">tawaseemakram@gmail.com</a> so we can assist promptly.
       </p>
     </section>
 
     <section id="security-changes" class="card">
-      <h2>9. Security &amp; Policy Updates</h2>
+      <h2>8. Security &amp; Policy Updates</h2>
       <p>
-        We rely on Android OS application sandboxing for on-device records and HTTPS/TLS encryption for all network communications with Firebase AI Logic, Firebase App Check, and Google AdMob. No method of electronic storage or transmission is 100% immune to risk, so please keep your device OS updated and protected with a screen lock.
+        We rely on Android OS application sandboxing for on-device records and HTTPS/TLS encryption for network communications with Google AdMob. No method of electronic storage or transmission is 100% immune to risk, so please keep your device OS updated and protected with a screen lock.
       </p>
       <p>
         We may update this Privacy Policy periodically to reflect app improvements, SDK updates, or legal requirements. Changes take effect once posted on this page with an updated <strong>Effective Date</strong>.
@@ -473,7 +447,7 @@
     </section>
 
     <section id="contact" class="card">
-      <h2>10. Contact Us</h2>
+      <h2>9. Contact Us</h2>
       <p>
         If you have any questions, concerns, or requests regarding this Privacy Policy or Plan Karo's data practices, please contact the developer:
       </p>
@@ -484,7 +458,7 @@
     </section>
 
     <footer>
-      <p>&copy; 2026 Plan Karo. All rights reserved. • Effective Date: November 14, 2026</p>
+      <p>&copy; 2026 Plan Karo. All rights reserved. • Effective Date: November 16, 2026</p>
     </footer>
   </main>
 </body>
